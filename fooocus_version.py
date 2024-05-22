@@ -1,1 +1,1 @@
-version = '2.3.2 (mashb1t)'
+version = '2.4.0-rc4 (mashb1t)'

@@ -34,7 +34,8 @@ KSAMPLER = {
     "dpmpp_3m_sde": "",
     "dpmpp_3m_sde_gpu": "",
     "ddpm": "",
-    "lcm": "LCM"
+    "lcm": "LCM",
+    "tcd": "TCD"
 }
 
 SAMPLER_EXTRA = {
@@ -47,7 +48,7 @@ SAMPLERS = KSAMPLER | SAMPLER_EXTRA
 
 KSAMPLER_NAMES = list(KSAMPLER.keys())
 
-SCHEDULER_NAMES = ["normal", "karras", "exponential", "sgm_uniform", "simple", "ddim_uniform", "lcm", "turbo"]
+SCHEDULER_NAMES = ["normal", "karras", "exponential", "sgm_uniform", "simple", "ddim_uniform", "lcm", "turbo", "align_your_steps", "tcd"]
 SAMPLER_NAMES = KSAMPLER_NAMES + list(SAMPLER_EXTRA.keys())
 
 sampler_list = SAMPLER_NAMES
@@ -96,6 +97,7 @@ metadata_scheme = [
 ]
 
 controlnet_image_count = 4
+preparation_step_count = 13
 
 
 class OutputFormat(Enum):

@@ -379,7 +379,7 @@ default_prompt = get_config_item_or_set_default(
 default_performance = get_config_item_or_set_default(
     key='default_performance',
     default_value=Performance.SPEED.value,
-    validator=lambda x: x in Performance.list()
+    validator=lambda x: x in Performance.values()
 )
 default_advanced_checkbox = get_config_item_or_set_default(
     key='default_advanced_checkbox',
@@ -435,6 +435,11 @@ default_cfg_tsnr = get_config_item_or_set_default(
     key='default_cfg_tsnr',
     default_value=7.0,
     validator=lambda x: isinstance(x, numbers.Number)
+)
+default_clip_skip = get_config_item_or_set_default(
+    key='default_clip_skip',
+    default_value=2,
+    validator=lambda x: isinstance(x, int) and 1 <= x <= modules.flags.clip_skip_max
 )
 default_overwrite_step = get_config_item_or_set_default(
     key='default_overwrite_step',
@@ -517,6 +522,8 @@ possible_preset_keys = {
     "default_loras": "<processed>",
     "default_cfg_scale": "guidance_scale",
     "default_sample_sharpness": "sharpness",
+    "default_cfg_tsnr": "adaptive_cfg",
+    "default_clip_skip": "clip_skip",
     "default_sampler": "sampler",
     "default_scheduler": "scheduler",
     "default_overwrite_step": "steps",

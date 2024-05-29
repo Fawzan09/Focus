@@ -366,7 +366,7 @@ default_styles = get_config_item_or_set_default(
 )
 default_prompt_negative = get_config_item_or_set_default(
     key='default_prompt_negative',
-    default_value='',
+    default_value='(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth',
     validator=lambda x: isinstance(x, str),
     disable_empty_as_none=True
 )

@@ -48,7 +48,8 @@
     },
     "embeddings_downloads": {},
     "lora_downloads": {
-        "xl_more_art-full_v1.safetensors": "https://huggingface.co/Fawza/xl/resolve/main/xl_more_art-full_v1.safetensors"
+        "xl_more_art-full_v1.safetensors": "https://huggingface.co/Fawza/xl/resolve/main/xl_more_art-full_v1.safetensors",
+        "MJ52.safetensors": "https://huggingface.co/Fawza/xl/resolve/main/MJ52.safetensors"
     },
     "previous_default_models": [
         "juggernautXL_version8Rundiffusion.safetensors",

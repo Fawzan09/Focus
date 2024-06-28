@@ -1,3 +1,18 @@
+# [2.5.1](https://github.com/mashb1t/Fooocus/releases/tag/v2.5.1)
+
+* Fix missing handling for cloth category for u2net_cloth_seg in enhance tabs
+* Fix current_task_id increase when doing image enhancements
+* Rename checkbox `Enable Mask Upload` to `Enable Advanced Masking Features` to better hint to mask auto-generation feature
+
+# [2.5.0](https://github.com/mashb1t/Fooocus/releases/tag/v2.5.0)
+
+* Add enhance feature, which offers easy image refinement steps (similar to adetailer, but based on dynamic image detection instead of specific mask detection models). See [documentation](https://github.com/mashb1t/Fooocus/discussions/42).
+* Rewrite async worker code, make code much more reusable to allow iterations and improve reusability
+* Improve GroundingDINO and SAM image masking
+* Rename `--enable-describe-uov-image` to `--enable-auto-describe-image`, now also works for enhance image upload
+* Update python dependencies, remove diffusers, add segment_anything
+* Move checkboxes Enable Mask Upload and Invert Mask When Generating from Developer Debug Mode to Inpaint Or Outpaint
+
 # [2.4.3](https://github.com/lllyasviel/Fooocus/releases/tag/v2.4.3)
 
 * Fix alphas_cumprod setter for TCD sampler

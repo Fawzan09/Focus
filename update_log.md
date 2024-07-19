@@ -1,5 +1,18 @@
-# [2.6.0-rc1](https://github.com/mashb1t/Fooocus/releases/tag/v2.6.0-rc1)
+# [2.6.0](https://github.com/mashb1t/Fooocus/releases/tag/v2.6.0)
 
+This version includes various package updates. If the auto-update doesn't work you can do one of the following:
+1. Open a terminal in the Fooocus folder (location of config.txt) and run `git pull`
+2. Update packages
+   - Windows (installation through zip file): open a terminal in the Fooocus folder (location of config.txt) `..\python_embeded\python.exe -m pip install -r .\requirements_versions.txt` (Windows using embedded python, installation method zip file) or download Fooocus again (zip file attached to this release)
+   - other: manually update the packages using `python.exe -m pip install -r requirements_versions.txt` or use the docker image
+
+---
+
+* Update python dependencies
+* Add persistent model cache for metadata. Use `--rebuild-hash-cache X` (X = int, number of CPU cores, default all) to manually rebuild the cache for all non-cached hashes
+* Rename tab titles and translations from singular to plural
+* Rename document to documentation
+* Only import translator when needed
 * Update default models to latest versions
   * animaPencilXL_v400 => animaPencilXL_v500
   * DreamShaperXL_Turbo_dpmppSdeKarras => DreamShaperXL_Turbo_v2_1
@@ -9,8 +22,6 @@
 * Add restart sampler ([paper](https://arxiv.org/abs/2306.14878))
 * Add config option for default_inpaint_engine_version, sets inpaint engine for pony_v6 and playground_v2.5 to None for improved results (incompatible with inpaint engine)
 * Add image editor functionality to mask upload (same as for inpaint, now correctly resizes and allows more detailed mask creation)
-* Add persistent model cache for metadata. Use `--rebuild-hash-cache` to manually rebuild the cache for all non-cached hashes
-* Rename `--enable-describe-uov-image` to `--enable-auto-describe-image` to better reflect its purpose (now also works for enhance image upload)
 
 # [2.5.2](https://github.com/mashb1t/Fooocus/releases/tag/v2.5.2)
 

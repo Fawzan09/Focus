@@ -1,5 +1,5 @@
 {
-    "default_model": "RealVisXL.safetensors",
+    "default_model": "DreamShaper.safetensors",
     "default_refiner": "None",
     "default_refiner_switch": 0.5,
     "default_loras": [
